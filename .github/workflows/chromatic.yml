@@ -1,0 +1,25 @@
+name: 'Chromatic Deployment'
+on: push # 在每次 push 时触发
+
+jobs:
+  build:
+    name: 'Build and Deploy to Chromatic'
+    runs-on: ubuntu-latest # 使用最新版本的 Ubuntu
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2 # 检出仓库代码
+
+      - name: Install dependencies
+        run: yarn install # 使用 yarn 安装依赖
+
+      - name: Build Storybook
+        run: yarn build-storybook # 构建 Storybook
+
+      - name: Deploy to Chromatic
+        uses: chromaui/action@v1 # 使用 Chromatic 的 GitHub Action
+        with:
+          token: chpt_3af0b2f2394ff0c # 使用项目令牌
+          projectToken: chpt_3af0b2f2394ff0c
+          buildScriptName: 'build-storybook'
+          # 如果需要，您可以添加额外的 Chromatic 参数
