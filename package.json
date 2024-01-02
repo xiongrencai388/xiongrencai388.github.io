@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "build-storybook": "build-storybook -s public",
-    "preview": "vite preview"
+    "build-storybook": "npx storybook build -c .storybook -o .storybook-static",
+    "preview": "vite preview",
+    "chromatic": "npx chromatic --project-token=chpt_3af0b2f2394ff0c"
   },
   "dependencies": {
     "@yarnpkg/core": "^4.0.2",
@@ -27,9 +28,12 @@
     "@storybook/addon-outline": "7.6.6",
     "@storybook/addon-toolbars": "^7.6.7",
     "@storybook/addon-viewport": "^7.6.6",
+    "@storybook/builder-vite": "^7.6.7",
+    "@storybook/cli": "^7.6.7",
     "@storybook/jest": "^0.2.3",
     "@storybook/test-runner": "^0.16.0",
     "@storybook/testing-library": "^0.2.2",
+    "@storybook/vue3": "^7.6.7",
     "@storybook/vue3-vite": "^7.6.6",
     "@types/node": "^20.10.6",
     "@types/react": "^18",
@@ -45,5 +49,7 @@
   },
   "main": "index.js",
   "license": "MIT",
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.0.2",
+  "readme": "ERROR: No README data found!",
+  "_id": "storybook-7-vue-3-sample@0.0.0"
 }
