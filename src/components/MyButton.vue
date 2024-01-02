@@ -53,7 +53,7 @@ button {
   border-radius: 3em;
   cursor: pointer;
   display: inline-block;
-  line-height: 1;
+  line-height: 2;
   color: white;
   padding: 1rem;
 }
