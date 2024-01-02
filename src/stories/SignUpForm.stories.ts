@@ -43,7 +43,6 @@ export const Error: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
 
-    const nameInput = canvas.getByLabelText("Name", { selector: "input" });
     const ageInput = canvas.getByLabelText("Age", { selector: "input" });
     const submitButton = canvas.getByRole("button", { name: "確定" });
 

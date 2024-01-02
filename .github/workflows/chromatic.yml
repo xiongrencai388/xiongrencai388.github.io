@@ -24,3 +24,19 @@ jobs:
           token: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           buildScriptName: 'build-storybook'
+      
+      - name: Build Vue App
+        run: yarn build
+
+      - name: Deploy Vue App to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: main # 部署到 gh-pages 分支
+          folder: dist # Vue 应用构建输出目录
+
+      - name: Deploy Storybook to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: main # 部署到同一个 gh-pages 分支
+          folder: .storybook-static # Storybook 构建输出目录
+          target-folder: storybook # 部署到子路径

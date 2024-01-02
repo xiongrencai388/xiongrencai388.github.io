@@ -8,7 +8,7 @@
     "build": "vue-tsc && vite build",
     "build-storybook": "npx storybook build -c .storybook -o .storybook-static",
     "preview": "vite preview",
-    "chromatic": "npx chromatic --project-token=chpt_3af0b2f2394ff0c"
+    "chromatic": "npx chromatic --project-token=chpt_35228eabc1f916c"
   },
   "dependencies": {
     "@yarnpkg/core": "^4.0.2",
