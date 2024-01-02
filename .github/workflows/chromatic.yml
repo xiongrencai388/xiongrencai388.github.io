@@ -19,7 +19,7 @@ jobs:
       - name: Deploy to Chromatic
         uses: chromaui/action@v1 # 使用 Chromatic 的 GitHub Action
         with:
-          token: chpt_3af0b2f2394ff0c # 使用项目令牌
-          projectToken: chpt_3af0b2f2394ff0c
+          token: ${{ secrets.CHROMATIC_PROJECT_TOKEN }} # 使用项目令牌
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           buildScriptName: 'build-storybook'
           # 如果需要，您可以添加额外的 Chromatic 参数
