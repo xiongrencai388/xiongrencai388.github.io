@@ -49,7 +49,7 @@ const emits = defineEmits([
 button {
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  border: 0;
+  border: 2;
   border-radius: 3em;
   cursor: pointer;
   display: inline-block;
