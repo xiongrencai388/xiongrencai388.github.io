@@ -1,0 +1,7 @@
+import{f as M,y as a,z as s,D as P,u as F,A as t,F as b,G as v,B as w}from"./vue.esm-bundler-uHHmxH7B.js";import{u as L}from"./pinia-FyXulLgP.js";import{M as S}from"./MyHeader-aHTRWg8T.js";import"./MyButton-nCu5LGPX.js";import"./_plugin-vue_export-helper-x3n3nnut.js";const h={class:"content-wrapper"},n=M({__name:"MyPage",setup(x){const r=L();function g(){r.login({id:1})}function d(){r.logout()}function f(){}return(_,k)=>(a(),s("div",null,[P(S,{isLoggedIn:F(r).isLoggedIn,onLogin:g,onLogout:d,onSignUp:f},null,8,["isLoggedIn"]),t("main",null,[t("div",h,[(a(),s(b,null,v(10,y=>t("div",{class:"content",key:y},w(_.$t("page.content").repeat(20)),1)),64))])])]))}});n.__docgenInfo={exportName:"default",displayName:"MyPage",description:"",tags:{},sourceFiles:["/home/runner/work/xiongrencai388.github.io/xiongrencai388.github.io/src/components/MyPage.vue"]};const C={title:"MyPage",component:n,render:()=>({components:{MyPage:n},template:"<MyPage />"})},e={},o={parameters:{viewport:{defaultViewport:"mobile"}}};var i,c,p;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:"{}",...(p=(c=e.parameters)==null?void 0:c.docs)==null?void 0:p.source}}};var m,u,l;o.parameters={...o.parameters,docs:{...(m=o.parameters)==null?void 0:m.docs,source:{originalSource:`{
+  parameters: {
+    viewport: {
+      defaultViewport: "mobile"
+    }
+  }
+}`,...(l=(u=o.parameters)==null?void 0:u.docs)==null?void 0:l.source}}};const D=["ForPc","ForMobile"];export{o as ForMobile,e as ForPc,D as __namedExportsOrder,C as default};
