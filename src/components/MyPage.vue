@@ -9,6 +9,9 @@ function login() {
 }
 
 function logout() {
+  if (true) {
+    
+  }
   currentUserStore.logout();
 }
 
