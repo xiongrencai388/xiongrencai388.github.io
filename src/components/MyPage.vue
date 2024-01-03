@@ -5,9 +5,6 @@ import MyHeader from "./MyHeader.vue";
 const currentUserStore = useCurrentUserStore();
 
 function login() {
-  if (true) {
-    
-  }
   currentUserStore.login({ id: 1 });
 }
 
