@@ -1,5 +1,11 @@
 name: 'Chromatic Deployment'
-on: push
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
@@ -40,3 +46,9 @@ jobs:
           branch: main # 部署到同一个 gh-pages 分支
           folder: .storybook-static # Storybook 构建输出目录
           target-folder: storybook # 部署到子路径
+
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master 
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
